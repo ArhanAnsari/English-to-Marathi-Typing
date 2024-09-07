@@ -5,14 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>English to Marathi Typing</title>
     <link rel="stylesheet" href="styles.css">
-    <!-- Include the indic-transliteration library -->
-    <script src="https://cdn.jsdelivr.net/npm/indic-transliteration@2.1.0/dist/indic-transliteration.browser.js"></script>
+    <!-- Include jQuery for additional functionalities (optional) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
     <div class="container">
         <h1>English to Marathi Typing</h1>
         <textarea id="inputText" placeholder="Type in English..."></textarea>
         <textarea id="outputText" placeholder="Converted Marathi text..." readonly></textarea>
+        <div class="buttons">
+            <button id="clearBtn">Clear</button>
+            <button id="copyBtn">Copy</button>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
