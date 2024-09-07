@@ -1,33 +1,21 @@
-document.getElementById('translateButton').addEventListener('click', async () => {
-    const inputText = document.getElementById('inputText').value;
-    const outputTextArea = document.getElementById('outputText');
-  
-    if (inputText.trim() === '') {
-      outputTextArea.value = 'Please enter text to translate.';
-      return;
+// script.js
+
+// Function to transliterate from English to Marathi
+function transliterateText(input) {
+    return IndicTransliterator.transliterate(input, "english", "marathi");
+}
+
+// Event listener to detect typing
+document.getElementById('inputText').addEventListener('input', function () {
+    const inputText = this.value;
+    const words = inputText.split(' ');
+    const lastWord = words[words.length - 2]; // Get the word before the latest space
+
+    if (inputText.endsWith(' ') && lastWord) {
+        const transliteratedWord = transliterateText(lastWord);
+        words[words.length - 2] = transliteratedWord; // Replace English word with Marathi transliteration
+        document.getElementById('outputText').value = words.join(' ');
+    } else {
+        document.getElementById('outputText').value = inputText;
     }
-  
-    try {
-      const response = await fetch('https://libretranslate.de/translate', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({
-          q: inputText,
-          source: 'en',
-          target: 'mr',
-          format: 'text'
-        })
-      });
-  
-      if (!response.ok) {
-        throw new Error('Translation failed');
-      }
-  
-      const data = await response.json();
-      outputTextArea.value = data.translatedText;
-    } catch (error) {
-      outputTextArea.value = 'Error: ' + error.message;
-    }
-  });
+});
