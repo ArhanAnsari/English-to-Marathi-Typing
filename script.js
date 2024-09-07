@@ -10,27 +10,25 @@ const transliterationMap = {
     'sha': 'श', 'ssa': 'ष', 'sa': 'स', 'ha': 'ह', 'ksha': 'क्ष',
     'tra': 'त्र', 'gya': 'ज्ञ', 'ri': 'ऋ', 'li': 'ऌ', 'lu': 'ॡ',
     'ti': 'ति', 'to': 'तो', 'tu': 'तु', 'shi': 'शि', 'sho': 'शो',
-    'chu': 'चु', 'chu': 'छु', 'dhi': 'धि', 'dha': 'धा', 'tha': 'था',
+    'chu': 'चु', 'dhi': 'धि', 'dha': 'धा', 'tha': 'था',
     'dya': 'द्या', 'gra': 'ग्र', 'stri': 'स्त्री', 'bha': 'भा',
     'li': 'ली', 'chi': 'ची', 'kti': 'क्ति', 'jai': 'जै', 'shu': 'शु',
-    'chu': 'चू', 'na': 'ना', 'sha': 'षा', 'cha': 'चा', 'ne': 'ने', 
-    'kri': 'कृ', 'dri': 'दृ', 'shi': 'शि', 'ti': 'ति', 'mi': 'मि',
-    'jha': 'झा', 'pi': 'पि', 'pa': 'पा', 'la': 'ला', 'pu': 'पु',
+    'na': 'ना', 'sha': 'षा', 'cha': 'चा', 'ne': 'ने', 
+    'kri': 'कृ', 'dri': 'दृ', 'mi': 'मी', 'pi': 'पि', 'pa': 'पा', 'la': 'ला', 'pu': 'पु',
     'ka': 'का', 'ko': 'को', 'no': 'नो', 'ha': 'हा', 'chi': 'चि',
-    'bha': 'भा', 'phu': 'फु', 'mha': 'म्हा', 'mi': 'मी', 'bha': 'भा',
-    'va': 'वा', 'vi': 'वि', 'sha': 'ष', 'aai': 'आई', 'baba': 'बाबा',
-    'shiksha': 'शिक्षा', 'vidya': 'विद्या', 'mitra': 'मित्र', 'divas': 'दिवस',
-    'namaskar': 'नमस्कार', 'aamhi': 'आम्ही', 'aapan': 'आपण', 'pan': 'पण',
-    'acha': 'अच्छा', 'navin': 'नवीन', 'shabd': 'शब्द', 'shabdakosh': 'शब्दकोश',
-    'vidyarthi': 'विद्यार्थी', 'vidyalaya': 'विद्यालय', 'shala': 'शाळा',
-    'prarthana': 'प्रार्थना', 'ghara': 'घर', 'tu': 'तू', 'tumhi': 'तुम्ही',
-    'tyacha': 'त्याचा', 'tyanchi': 'त्यांची', 'tya': 'त्या', 'he': 'हे',
-    ',': '।', '.': '।', 'raaj': 'राज', 'karyalaya': 'कार्यालया', 'kaam': 'काम',
-    'samaj': 'समाज', 'sanskruti': 'संस्कृती', 'kal': 'काल', 'aam': 'आम',
-    'vaad': 'वाद', 'vishay': 'विषय', 'vrutti': 'वृत्ती', 'sambandh': 'संबंध',
+    'bha': 'भा', 'phu': 'फु', 'mha': 'म्हा', 'va': 'वा', 'vi': 'वि',
+    'sha': 'ष', 'aai': 'आई', 'baba': 'बाबा', 'shiksha': 'शिक्षा', 'vidya': 'विद्या',
+    'mitra': 'मित्र', 'divas': 'दिवस', 'namaskar': 'नमस्कार', 'aamhi': 'आम्ही',
+    'aapan': 'आपण', 'pan': 'पण', 'acha': 'अच्छा', 'navin': 'नवीन',
+    'shabd': 'शब्द', 'shabdakosh': 'शब्दकोश', 'vidyarthi': 'विद्यार्थी',
+    'vidyalaya': 'विद्यालय', 'shala': 'शाळा', 'prarthana': 'प्रार्थना',
+    'ghara': 'घर', 'tu': 'तू', 'tumhi': 'तुम्ही', 'tyacha': 'त्याचा',
+    'tyanchi': 'त्यांची', 'tya': 'त्या', 'he': 'हे', ',': '।', '.': '।',
+    'raaj': 'राज', 'karyalaya': 'कार्यालया', 'kaam': 'काम', 'samaj': 'समाज',
+    'sanskruti': 'संस्कृती', 'kal': 'काल', 'aam': 'आम', 'vaad': 'वाद',
+    'vishay': 'विषय', 'vrutti': 'वृत्ती', 'sambandh': 'संबंध',
     'marg': 'मार्ग', 'sena': 'सेना', 'desh': 'देश', 'bhavan': 'भवन',
     'saty': 'सत्य', 'mukh': 'मुख', 'mantri': 'मंत्री', 'vidhi': 'विधी'
-    // Expand with more phonetic rules as needed
 };
 
 // Expanded dictionary with more words for autocomplete suggestions
@@ -120,14 +118,9 @@ const marathiDictionary = {
     'vidnyan': ['विज्ञान'],
     'sahitya': ['साहित्य'],
     'samaj': ['समाज'],
-    'vyavahar': ['व्यवहार'],
     'raaj': ['राज'],
     'karyalaya': ['कार्यालया'],
     'kaam': ['काम'],
-    'samaj': ['समाज'],
-    'sanskruti': ['संस्कृती'],
-    'kal': ['काल'],
-    'aam': ['आम'],
     'vaad': ['वाद'],
     'vishay': ['विषय'],
     'vrutti': ['वृत्ती'],
@@ -140,7 +133,6 @@ const marathiDictionary = {
     'mukh': ['मुख'],
     'mantri': ['मंत्री'],
     'vidhi': ['विधी']
-    // Continue expanding with more common words and their Marathi translations...
 };
 
 // Function for Transliteration
