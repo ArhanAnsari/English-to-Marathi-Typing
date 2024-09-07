@@ -25,7 +25,11 @@ const transliterationMap = {
     'vidyarthi': 'विद्यार्थी', 'vidyalaya': 'विद्यालय', 'shala': 'शाळा',
     'prarthana': 'प्रार्थना', 'ghara': 'घर', 'tu': 'तू', 'tumhi': 'तुम्ही',
     'tyacha': 'त्याचा', 'tyanchi': 'त्यांची', 'tya': 'त्या', 'he': 'हे',
-    ',': '।', '.': '।'
+    ',': '।', '.': '।', 'raaj': 'राज', 'karyalaya': 'कार्यालया', 'kaam': 'काम',
+    'samaj': 'समाज', 'sanskruti': 'संस्कृती', 'kal': 'काल', 'aam': 'आम',
+    'vaad': 'वाद', 'vishay': 'विषय', 'vrutti': 'वृत्ती', 'sambandh': 'संबंध',
+    'marg': 'मार्ग', 'sena': 'सेना', 'desh': 'देश', 'bhavan': 'भवन',
+    'saty': 'सत्य', 'mukh': 'मुख', 'mantri': 'मंत्री', 'vidhi': 'विधी'
     // Expand with more phonetic rules as needed
 };
 
@@ -117,6 +121,25 @@ const marathiDictionary = {
     'sahitya': ['साहित्य'],
     'samaj': ['समाज'],
     'vyavahar': ['व्यवहार'],
+    'raaj': ['राज'],
+    'karyalaya': ['कार्यालया'],
+    'kaam': ['काम'],
+    'samaj': ['समाज'],
+    'sanskruti': ['संस्कृती'],
+    'kal': ['काल'],
+    'aam': ['आम'],
+    'vaad': ['वाद'],
+    'vishay': ['विषय'],
+    'vrutti': ['वृत्ती'],
+    'sambandh': ['संबंध'],
+    'marg': ['मार्ग'],
+    'sena': ['सेना'],
+    'desh': ['देश'],
+    'bhavan': ['भवन'],
+    'saty': ['सत्य'],
+    'mukh': ['मुख'],
+    'mantri': ['मंत्री'],
+    'vidhi': ['विधी']
     // Continue expanding with more common words and their Marathi translations...
 };
 
